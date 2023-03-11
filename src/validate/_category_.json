@@ -1,8 +1,8 @@
 {
-  "position": 5,
-  "label": "Validate",
+  "position": 3,
+  "label": "Validator and Full Node Infrastructure",
   "link": {
-    "title": "Validate",
+    "title": "Validator and Full Node Infrastructure",
     "slug": "validate",
     "type": "generated-index"
   }
