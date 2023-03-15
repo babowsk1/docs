@@ -414,7 +414,7 @@ These get-methods are used for local run.
 
 ## Multi-Round elections
 
-![Multi-Round elections](multi-round-elections.png)
+![Multi-Round elections](img/multi-round-elections.png)
 
 Every round goes through several steps:
 
