@@ -16,4 +16,4 @@ In Everscale, it is a *thing* with properties like address, code, data, balance 
 
 A combination of these steps is called a **transaction**. It is important that events are handled one by one, thus *transactions* are strictly ordered and cannot interrupt each other.
 
-This pattern is well known and called 'Actor Model'.
+This pattern is well known and called `Actor Model`.
