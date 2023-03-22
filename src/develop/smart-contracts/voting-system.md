@@ -243,7 +243,7 @@ contract Ballot {
 }    
 ```
 
-Let's talk about the activation mechanic. In constructor, we already reserved little more venoms. We made it with the purpose, that fee for the external call will be paid from the contract balance. That way of gas management allows us to transfer external calls fee-paying to user responsibility. But activate method shouldn't be called by somebody unauthorized, so we just use `require` keyword by comparing `msg.pubkey` and  `_managerPublicKey` stored in state init. Of course, you need to call `tvm.accept()` function. Simply put, this call allows the contract to use its own balance for executive pay.
+Let's talk about the activation mechanic. In constructor, we already reserved little more EVERs. We made it with the purpose, that fee for the external call will be paid from the contract balance. That way of gas management allows us to transfer external calls fee-paying to user responsibility. But activate method shouldn't be called by somebody unauthorized, so we just use `require` keyword by comparing `msg.pubkey` and  `_managerPublicKey` stored in state init. Of course, you need to call `tvm.accept()` function. Simply put, this call allows the contract to use its own balance for executive pay.
 
 ```solidity title="Ballot.sol" showLineNumbers
 pragma ever-solidity >= 0.61.2;
@@ -255,7 +255,7 @@ contract Ballot {
     ...
     // this function will be called by external message, so contract will pay for this call
     // this mechanic exists for moving commision paying to user responsibility
-    // in consctructor we reserver a little more venoms, so here we just will use them (with returning remains)
+    // in consctructor we reserver a little more EVERs, so here we just will use them (with returning remains)
     // useful mechaninc for your dapp
     function activate() external {
         require(msg.pubkey() == _managerPublicKey, 200);
@@ -364,7 +364,7 @@ contract Ballot {
 
     // this function will be called by external message, so contract will pay for this call
     // this mechanic exists for moving commision paying to user responsibility
-    // in consctructor we reserver a little more venoms, so here we just will use them (with returning remains)
+    // in consctructor we reserver a little more EVERs, so here we just will use them (with returning remains)
     // useful mechaninc for your dapp
     function activate() external {
         require(msg.pubkey() == _managerPublicKey, 200);
@@ -401,4 +401,4 @@ contract Ballot {
 }
 ```
 
-Do not forget about tests and scripts. We won't show any scripts in this guideline just because there is no something special in them. All source code with deploy script and simple test suites are available in [repo](https://github.com/venom-blockchain/guides/tree/master/vote-contracts). The next section will show you some enhancements for this code.
+Do not forget about tests and scripts. We won't show any scripts in this guideline just because there is no something special in them. All source code with deploy script and simple test suites are available in [repo](https://github.com/EVER-blockchain/guides/tree/master/vote-contracts). The next section will show you some enhancements for this code.
