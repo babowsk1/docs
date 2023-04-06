@@ -2,55 +2,53 @@
 sidebar_position: 0
 ---
 
-# Welcome
+# Welcome to Everscale 
 
 <iframe width="650" height="325" src="https://www.youtube.com/embed/G7oMhqOIOIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Welcome to **Everscale documentation**       
-  
-This is the starting point for all devs who want to build the future of Web3 together with us.
+This is the starting point for Everscale documentation. Here you will find the guidance necessary to start developing on the network. 
 
-### Table of contents: 
-- [**Overview**](overview/)
-  - [Basic concepts](overview/concepts.md)
-  - [Differences from EVM](overview/differences-from-evm.md)
-  - [The Lore](overview/lore.md)
-- [**Build**](develop/)
-  - [Intro](develop/intro.md)
-  - [Developer Tools Overview](develop/tools-overview.md)
-  - [Smart Contracts](develop/smart-contracts/)
-  - [Frontend](develop/frontend/)
-  - [Backend](develop/backend/)
-- [**Validator and Full Node Infrastructure**](validate)
-  - [Staking Mechanics](validate/staking-mechanics.md)
-  - [Node Requirements](validate/node-requirements.md)
-  - [Run Validator](validate/run-validator.md)
-  - [Run Full Node](validate/run-full-node.md)
-  - [Network Monitoring](validate/network-monitoring.md)
-- [**Specitifaction**](spec/)
-  - [Intro](spec/intro.md)
-  - [Token Standards](spec/standards/)
-  - [ABI](spec/abi/)
-  - [DePools](spec/depool-specifications.md)
-  - [Executor](spec/executor.md)
-  - [REMP](spec/remp.md)
-  - [SMFT](spec/smft.md)
-- [**Architecture**](arch/)
-  - [Networking](arch/networking.md)
-  - [Consensus](arch/consensus-algorithm/)
-  - [TL-B and BoC](arch/tlb-and-boc.md)
-  - [Account](arch/accounts.md)
-  - [Message](arch/message.md)
-  - [Transaction](arch/message.md)
-  - [TVM](arch/tvm.md)
-  - [TVM Executor](arch/tvm-executor.md)
-  - [Network Fees](arch/network-fees.md)
-  - [Block Structure](arch/block-structure.md)
-  - [Workchains](arch/workchains.md)
-  - [Multithreading and Message Queues](arch/multithreading.md)
-  - [Reliable External Messaging Protocol](arch/messaging-protocol.md)
-  - [Logical Time and Message Delivery Guarantees](arch/logic-time.md)
-  - [Cross-Workchain Messaging](arch/cross-workchain-messaging.md)
-  - [Staking](arch/staking.md)
-  - [Masterchain Configuration](arch/masterchain-conf.md)
-  - [Running a Network](arch/running-network.md)
+## To begin with
+
+Since you landed on this page you most likely want to learn Everscale’s tech and start developing with us. This entails you will need to create a wallet and hold some EVERs, the native token of Everscale. Below, we gathered the resources you will undoubtedly need to comfortably manage your EVER tokens.  
+
+1. **Create a Wallet** 
+
+[https://everwallet.net/](https://everwallet.net/) 
+
+This is the place where you will store your EVER tokens while interacting with Everscale.
+
+2. **Buy or Sell EVERs**
+
+One window for all DEX and CEX platforms where EVER token is listed on. 
+
+[https://everkit.org/ru/coin](https://everkit.org/ru/coin) 
+
+3. **Exchange tokens**
+
+
+[https://flatqube.io/](https://flatqube.io/) 
+
+
+With FlatQube you can easily exchange your tokens or use a multitude of earning opportunities, including liquid stacking.
+
+4. **Track transactions**
+
+
+[https://everscan.io/](https://everscan.io/) 
+
+
+With the help of Everscan, you can search and view all transactions, addresses, tokens and other activities on the Everscale blockchain.
+
+5. **Move tokens across chains**
+
+
+[https://octusbridge.io/](https://octusbridge.io/) 
+
+Octus Bridge allows you to instantly transfer your tokens to several popular networks in both directions.
+
+:::info
+
+After having studied how to manage your EVERs, please move to the overview of Everscale’s documentation via [this link](overview/overview.md).
+
+:::

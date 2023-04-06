@@ -1,32 +1,84 @@
 ---
 sidebar_position: 0
-slug: "overview"
 ---
 
-# Everscale overview
+# Documentation overview
 
-![](img/everscale-banner.jpg)
+## Welcome
 
-Everscale is a rapidly expanding next-gen distributed ledger technology (DLT). It comes to the fore with three distinctive technologies: **dynamic sharding, parallel smart contract execution** and **distributed programming.** Coupled together, they allow the platform to securely process millions of transactions per second. Such performance makes it one of the few layer one blockchains technologically suited for hosting CBDCs and a wide range of solutions for the enterprise sector. In practice, these are the areas Everscale sees as priorities in its forthcoming development.Despite the fact that Everscale was set in motion just two years ago, currently there are more than 50 dApps and services on the network. These include the DeVote - on-chain voting system. Qamon decentralized mail service providing strong end-to-end encryption for confidential p2p communication.Octus Bridge facilitates fast cross-chain transfers between several top networks. FlatQube DEX offers token swaps for negligible gas fees and a multitude of earning opportunities, including liquid staking. And Ever wallet, the premier wallet for the Everscale blockchain. To see all actively operating dApps please follow this [link](infinite-scalability.md).
+This is the introductory section where you can learn Everscale’s basic concepts, infinite scalability as well as comparisons with Ethereum, Cosmos and Avalanche. 
 
-**Empowering developers with application-specific blockchains**
+- [Concepts](concepts.md)
+- [Infinite scalability](infinite-scalability.md)
+- [Differences from EVM](differences-from-evm.md)
+- [Everscale, Cosmos and Avalanche:  a comparison of most scalable blockchains allowing the creation of application-specific blockchains](cosmos-and-avalanche.md)
+- [The Lore](lore.md)
 
-With Everscale, developers can choose to build entirely autonomous application-specific blockchains (workchains) that can easily communicate with each other. This is to say, unlike with other blockchains, there is no longer the need for different applications to exist as smart contracts on someone else's chain. Workchains are protected from main network congestion which happens in times of heightened activity. More than that, they can have their own configuration parameters, TVM and native currency. This has massive implications for the future of decentralized services. Instead of an ever increasing number of services competing for throughput on a single base layer, it's much more efficient having many isolated (sovereign) workchains. 
+## Build 
 
-**Everscale’s top development priorities**
+Get familiar with Everscale’s developer tools and start building. Also, please find the guides to install the IDE and write your first smart contract with Everscale. 
 
-**CBDC** 
+- [**Build**](../develop/)
+  - [Intro](../develop/intro.md)
+  - [Developer Tools Overview](../develop/tools-overview.md)
+  - [Smart Contracts](../develop/smart-contracts/)
 
-![](img/CDBC.jpg)
+### Frontend
 
-Currently most countries explore ways to implement central bank digital currencies. China is by far a distant leader in this respect. There are already more than 400 million transactions made with e-CNY. Additionally, the People’s Bank of China is giving billions of e-CNY away to promote the CBDC. Other countries are at different development stages, from prototype to testing stages. Everscale’s architecture is well tailored to accommodate CBDCs. For instance, it offers the deployment of template smart contracts with a pre-set logic. That is to say, all government policies and restrictions can easily be coded into the smart contract of a CBDC powered by Everscale. 
+Connect your wallet and find all the information necessary to write data to the blockchain as well as read it. 
 
-**Enterprise solutions**
+- [Frontend](../develop/frontend/)
 
-![](img/Enterprise.jpg)
+### Backend
 
-Everscale strongly believes that within a few years, close to 100% of payments will be processed with the help of blockchain. The same applies to logistics, healthcare, government services, the Internet of Things, and almost any other sector of the economy with a large amount of records and data processing.
+Deploy smart contracts on the Everscale network and find out all common backend routines. 
 
-This is due to large and medium-sized businesses actively researching and entering the realm of decentralized technologies. This rapid advancement of blockchain-powered enterprise solutions is a golden niche for developers.
+  - [Backend](../develop/backend/)
 
-To learn how Everscale achieves infinite scalability please follow [this page](https://everkit.org/en/ecosystem).
+## Validator and full node infrastructure 
+
+Learn Everscale’s validation in case you want to be a validator or just familiarize yourself with the technology. 
+
+- [**Validator and Full Node Infrastructure**](../validate)
+  - [Staking Mechanics](../validate/staking-mechanics.md)
+  - [Node Requirements](../validate/node-requirements.md)
+  - [Run Validator](../validate/run-validator.md)
+  - [Run Full Node](../validate/run-full-node.md)
+  - [Network Monitoring](../validate/network-monitoring.md) 
+
+## Specifications 
+
+Learn about incoming external messages tracing via the REMP protocol. Also, study Everscale's token standards, DePools and others.
+
+- [**Specitifaction**](../spec/)
+  - [Intro](../spec/intro.md)
+  - [Token Standards](../spec/standards/)
+  - [ABI](../spec/abi/)
+  - [DePools](../spec/depool-specifications.md)
+  - [Executor](../spec/executor.md)
+  - [REMP](../spec/remp)
+  - [SMFT](../spec/smft.md)
+
+## Architecture  
+
+Learn Everscale's peer-to-peer protocols. Among others, they are used to propagate new blocks as well as send and collect transaction candidates. 
+
+- [**Architecture**](../arch/)
+  - [Networking](../arch/networking.md)
+  - [Consensus](../arch/consensus-algorithm/)
+  - [TL-B and BoC](../arch/tlb-and-boc.md)
+  - [Account](../arch/accounts.md)
+  - [Message](../arch/message.md)
+  - [Transaction](../arch/message.md)
+  - [TVM](../arch/tvm.md)
+  - [TVM Executor](../arch/tvm-executor.md)
+  - [Network Fees](../arch/network-fees.md)
+  - [Block Structure](../arch/block-structure.md)
+  - [Workchains](../arch/workchains.md)
+  - [Multithreading and Message Queues](../arch/multithreading.md)
+  - [Reliable External Messaging Protocol](../arch/messaging-protocol.md)
+  - [Logical Time and Message Delivery Guarantees](../arch/logic-time.md)
+  - [Cross-Workchain Messaging](../arch/cross-workchain-messaging.md)
+  - [Staking](../arch/staking.md)
+  - [Masterchain Configuration](../arch/masterchain-conf.md)
+  - [Running a Network](../arch/running-network.md)
