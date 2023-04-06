@@ -1,5 +1,6 @@
 ---
-sidebar_position: 0
+sidebar_position: 1
+slug: "contents"
 ---
 
 # Documentation overview
@@ -8,11 +9,10 @@ sidebar_position: 0
 
 This is the introductory section where you can learn Everscale’s basic concepts, infinite scalability as well as comparisons with Ethereum, Cosmos and Avalanche. 
 
-- [Concepts](concepts.md)
 - [Infinite scalability](infinite-scalability.md)
 - [Differences from EVM](differences-from-evm.md)
-- [Everscale, Cosmos and Avalanche:  a comparison of most scalable blockchains allowing the creation of application-specific blockchains](cosmos-and-avalanche.md)
 - [The Lore](lore.md)
+- [Glossary](concepts.md)
 
 ## Build 
 

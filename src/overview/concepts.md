@@ -1,16 +1,12 @@
 ---
-sidebar_position: 1
+sidebar_position: 5
 ---
 
-# Basic concepts
-
-## **A**
+# Glossary
 
 ### **Accounts**
 
-This is the place for storing EVERs . Besides storage, users with an account are able to deposit and transfer Ever. The account record stores account address and account balance. Accounts are ultimately stored in TVM. For more information about Accounts please consult [this page](../arch/40-accounts.md).
-
-## **B**
+This is the place for storing EVERs . Besides storage, users with an account are able to deposit and transfer Ever. The account record stores account address and account balance. Accounts are ultimately stored in TVM. For more information about Accounts please consult [this page](../arch/accounts.md).
 
 ### **Blockchain**
 
@@ -20,8 +16,6 @@ The chain of all blocks that have been added to the Everscale network throughout
 
 There is a very high number of transactions on the Everscale network. Due to this, transactions are grouped in blocks. Each block counts hundreds of transactions.
 
-## **E**
-
 ### **Ever**
 
 Ever is the native cryptocurrency of Everscale. Besides being an investment opportunity for users, it has multiple uses inside as well as outside the Everscale network.
@@ -29,8 +23,6 @@ Ever is the native cryptocurrency of Everscale. Besides being an investment oppo
 ### **Everscale**
 
 Decentralised blockchain network that comprises many leading applications and services. Everscale has powerful developer tools, such as compilers for Solidity and C++, API, an SDK that includes client libraries for 13 programming languages and other convenient instruments designed for developers to build outstanding blockchain applications.
-
-## **M**
 
 ### **Messages**
 
@@ -44,13 +36,9 @@ For example, simple value transfer can be initiated with an external inbound mes
 
 For detailed information about Messages please consult [this page](../arch/50-message.md)
 
-### **N**
-
 ### **Nodes**
 
 Nodes are ordinary computers on which the Everscale program is running. Each node is connected to other nodes, which allows to come to a consensus, which is a special mechanism by which information about the correctness of transactions on the network is checked. The Everscale network is the aggregate of all Everscale nodes and their communications.
-
-## **S**
 
 ### **Shards**
 
@@ -63,8 +51,6 @@ Due to sharding, Everscale achieved one of the highest transactions per second r
 SMs are a kind of algorithm, or program that runs on Everscale or other blockchains, like Ethereum, which was the first to come up with the idea of smart contracts. They work in accordance with a prescribed set of rules that are programmed by developers. When all conditions prescribed in the contract are met, the contract is executed.
 
 For more information about smart contracts please consult [this page](../develop/smart-contracts/)
-
-## **T**
 
 ### **TVM**
 

@@ -30,7 +30,7 @@ The **masterchain** is for the synchronization of messages and transaction execu
 
 The need to resort to such a technical solution was dictated by several constraints. Namely, the first one arises when there is a need to send a lot of messages between servers. At a certain point, the internet connection could run out. Although data sharding solves this issue, it leaves the second problem, the lack of processing power. For this reason, multithreading, in the form of parallel execution, is fundamental for network scalability. 
 
-**Everscale’s threading in a nutshell.**
+## Everscale’s threading in a nutshell.
 
 - In case of a significant increase in the network load, some shards can be assigned to the neighboring validators.
 - The shards (workchains) offer low transaction fees while at the same time providing the security of Everscale (masterchain).
