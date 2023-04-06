@@ -10,9 +10,13 @@ Everscale’s infinite scalability has been envisioned in its architecture since
 
 This approach comes in contrast to the one Ethereum took, resorting to scalability just recently. The decision to scale was triggered by capacity limitations and high transaction costs. However, despite strong efforts, Ethereum is not yet successful. There are many solutions being researched and tested, such as rollups and different sharding approaches. The results remain to be seen in practice. 
 
-**Modus operandi**  
+## The Approach to Infinite Scalability
 
-**Everscale scales the network via a combination of both data sharding (via ‘’workchains’’ and execution sharding (via ‘’threads’’)).**
+:::info
+
+Everscale scales the network via a combination of both data sharding (workchains) and execution sharding (threads).
+
+:::
 
 The Everscale network is split into data shards called workchains. Each election cycle, the global set of validators rotate and are assigned to a workchain. Validators store data and process transactions only for their assigned workchain. As long as validators download blocks of other workchains and update their state based on the changes that occurred, all workchains can run in conjunction.
 
@@ -26,7 +30,7 @@ The **masterchain** is for the synchronization of messages and transaction execu
 
 The need to resort to such a technical solution was dictated by several constraints. Namely, the first one arises when there is a need to send a lot of messages between servers. At a certain point, the internet connection could run out. Although data sharding solves this issue, it leaves the second problem, the lack of processing power. For this reason, multithreading, in the form of parallel execution, is fundamental for network scalability. 
 
-**Everscale’s sharding in a nutshell.**
+**Everscale’s threading in a nutshell.**
 
 - In case of a significant increase in the network load, some shards can be assigned to the neighboring validators.
 - The shards (workchains) offer low transaction fees while at the same time providing the security of Everscale (masterchain).

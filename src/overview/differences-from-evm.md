@@ -26,7 +26,7 @@ Currently, Everscale is comprised of two global shards called workchains:
 
 **Master-workchain** (masterchain) for synchronization and governance, and the **main workchain** for smart contracts. 
 
-The main workchain is partitioned into N shards, at least 16. Each shard has its own group of validators. This sub-group is responsible for executing transactions in its own shard. At the same time, it constantly downloads blocks from all other shards of its workchain. 
+The main workchain can be partitioned into N shards (from 1 to 256 shards). Each shard has its own group of validators. This sub-group is responsible for executing transactions in its own shard. At the same time, it constantly downloads blocks from all other shards of its workchain. 
 
 A block in Everscale is not just a list of transactions that need to be completed in order to achieve changes in the state. Instead, a block is:
 - A list of messages for which transactions were executed, removing them from the incoming queue. 
@@ -77,7 +77,7 @@ This issue has also been de facto acknowledged by the Ethereum team, so that the
 
 Some other blockchains also explore ways to solve this issue. For example, in Near blockchain, the smart contract must lock N tokens each time it registers new information in the state. The issuer of the smart contract can set the conditions on it, so that the user can delete his information and receive the tokens back. This is definitely only a half-measure. Not all issuers of smart contracts set this condition, and even those who do, do not think about the mechanism of how to return tokens in case the cost of transactions changes in the future. Other blockchains simply remove smart contracts with fewer N tokens on the balance from the state.
 
-**Everscale, as a leading blockchain developer, never looks for easy and uncostly ways to solve blockchain issues. Therefore, the highlighted problem was resolved with the maximum efficiency and accuracy possible. In the Everscale blockchain, each contract is required to pay rent for storing its data in the state. This rent corresponds to the size of the data. When the money runs out, the contract is deleted with the possibility of recovery, and then deleted completely.**
+**Everscale never looks for easy and uncostly ways to solve blockchain issues. Therefore, the highlighted problem was resolved with the maximum efficiency and accuracy possible. In the Everscale blockchain, each contract is required to pay rent for storing its data in the state. This rent corresponds to the size of the data. When the money runs out, the contract is deleted with the possibility of recovery, and then deleted completely.**
 
 Thanks to this, Everscale achieves absolutely controlled behavior, when each smart contract decides for itself how long it will exist. Users do not have to compete with each other for the right to record data, and we get a huge throughput in terms of the number of transactions processed per second.
 
@@ -92,4 +92,3 @@ Thanks to this, Everscale achieves absolutely controlled behavior, when each sma
 - There are limits on data structure size per contract, for instance, token and NFT standards
 - Everything is a smart contract, even a simple wallet. A single public key can correspond to a different wallets
 - Data structures and memory model differences. Iterable mappings and other T-Sol specific types
-- Bounce messages
