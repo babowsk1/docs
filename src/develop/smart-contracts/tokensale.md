@@ -1,8 +1,8 @@
 ---
-sidebar_position: 10
+sidebar_position: 4
 ---
 
-# Example: Tokensale
+# Tutorial: Tokensale
 
 Let's write a simple, step-by-step tokensale contract. 
 

@@ -4,42 +4,41 @@ sidebar_position: 1
 
 # Developer Tools Overview
 
-## Introduction
-
 Before you start developing or integrating anything into Everscale, we would like to tell you about the tools and environment that you will use in your work.
 
-First of all, it is worth noting that Everscale is really a decentralized blockchain, not only from a technical point of view, but also from a management side, so the key tools and approaches to development may differ from different teams, technical contributors on the network.
+## For both dev and non-dev users
 
-At the moment, there are two active companies of technical contributors in Everscale network:
+- [Ever Wallet](https://everwallet.net)
+- [Ever Surf](https://ever.surf/)
+- [Blockchain Explorer](https://everscan.io)
 
-- [EverX](https://everx.dev/about)
-- [Broxus](https://broxus.com/)
+### Tools for developers
+
+- [Locklift](locklift.md) - development environment, analogous to Hardhat.
+- [Bytie](https://ever.bytie.moe) - smart contracts interaction playground.
+- [Everdev](https://github.com/tonlabs/everdev) - CLI tool and Javascript package that helps set up all the core developer tools and work with Everscale blockchain from a single interface
+- [RPC endpoints](https://docs.evercloud.dev/) - get started with RPC endpoints using this doc
+- [T-Sol compiler](https://github.com/tonlabs/TON-Solidity-Compiler) - Solidity-like language for smart contract development. Can be installed within Locklift or Everdev environments as well
+- [TONOS CLI](tonos-cli.md) - is a multi-platform command line interface for Everscale. It allows you to work with keys and seed phrases, deploy contracts, call any of their methods, generate and broadcast messages and more
+
+### T-Sol IDE integrations
+
+- [VSCode T-Sol plugin 1](https://marketplace.visualstudio.com/items?itemName=everscale.solidity-support)
+- [VSCode T-Sol plugin 2](https://marketplace.visualstudio.com/items?itemName=mytonwallet.ton-solidity-extension)
+- [JetBrains T-Sol plugin](https://plugins.jetbrains.com/plugin/20696-t-sol)
+
+### Libraries for developers
+
+- [Rust SDK](https://github.com/broxus/nekoton)
+- [Ever SDK with support of 10+ languages](https://docs.everos.dev/ever-sdk/)
+- [JS SDK recommended for building frontend](https://github.com/broxus/everscale-inpage-provider/)
+- [Build backend with the same friendly API as frontend devs have](https://github.com/broxus/everscale-standalone-client)
 
 
-And it is their solutions and tools that you will use when developing, while you will have every opportunity to write your own solutions as well, if necessary or desired.
+### Node-related repos
 
-## Tools
-
-### Set up Development Environment
-
-- [Everdev](https://github.com/tonlabs/everdev)(by EverX) - CLI tool and Javascript package that helps set up all the core developer tools and work with Everscale blockchain from a single interface
-
-### Interaction with blockchain
-
-- [TONOS CLI](tonos-cli.md)(by EverX) - is a multi-platform command line interface for Ever OS. It allows you to work with keys and seed phrases, deploy contracts, call any of their methods, generate and broadcast messages. It supports specific commands for [DeBot](../debots/getting-started.md), [DePools](../../validate/depools/getting-started.md) and Multisig contracts, as well as a number of supplementary functions.
-
-### Tools for contract developers:
-
-- [Everdev](https://github.com/tonlabs/everdev) (by EverX) - helps manage keys and networks and local testing blockchain, and compile, deploy and call contracts from CLI or from Javascript with a convenient API. 
-
-- [Evernode-SE](https://github.com/tonlabs/evernode-se) - local blockchain for contract and Dapp testing, exposing GraphQL API. Can be managed from [everdev](https://github.com/tonlabs/everdev).
-
-- [Locklift](locklift.md) (by Broxus) - development environment, analogous to Hardhat.
-
-- [TestSuite4](everdev/command-line-interface/testsuite4.md) (by EverX) - a framework designed to simplify development and testing of Everscale Contracts. It contains a lightweight blockchain emulator making it easy to develop contracts in a TDD-friendly style.
-
-- [Ever.bytie.moe](ever-bytie.md) (by Broxus) - smart contracts interaction playground.
-
-- [Ever.ninja](https://ever.ninja/trace) - tool for smart contract visualisation.
-
-- [TVM linker](https://github.com/tonlabs/TVM-linker) - EverDev contract management. It gives you the ability to easily deploy and run your smart contracts on blockchain network(s).
+- [Local Node](https://github.com/tonlabs/evernode-se) - local blockchain for contract and Dapp testing, exposing GraphQL API. Can be installed and managed within Everdev environment
+- [Light Node](https://github.com/broxus/ton-indexer) - Lightweight node implementation, useful for developing custom indexers
+- [Everscale Node](https://github.com/tonlabs/ever-node) - Validator and Full Node implementation
+- [Nodekeeper](https://github.com/broxus/nodekeeper) - All-in-one node management tool
+- [everscale-network](https://github.com/broxus/everscale-network) - implementation of the network part of the Everscale blockchain.

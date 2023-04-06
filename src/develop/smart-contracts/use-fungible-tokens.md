@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 3
 ---
 
-# Use Fungible Tokens
+# Deploy TIP-3 Token

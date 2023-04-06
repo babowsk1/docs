@@ -1,8 +1,8 @@
 ---
-sidebar_position: 9
+sidebar_position: 5
 ---
 
-# Example: Voting system
+# Tutorial: Voting system
 
 Most leading blockchain networks implement decentralized voting systems. Everscale is no exception to this widespread practice. 
 
