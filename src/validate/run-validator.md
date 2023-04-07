@@ -69,8 +69,8 @@ VALIDATOR_GROUP="validator"
 sudo groupadd $VALIDATOR_GROUP
 sudo useradd $VALIDATOR_USER -m -s /bin/bash -g $VALIDATOR_GROUP -G sudo
 # Mount 
-sudo mkdir -p /var/venom/rnode/
-sudo chown $VALIDATOR_USER:$VALIDATOR_GROUP /var/venom/rnode/
+sudo mkdir -p /var/ever/rnode/
+sudo chown $VALIDATOR_USER:$VALIDATOR_GROUP /var/ever/rnode/
 ```
 
 1.2. Check if the NTP service is UP and running
@@ -124,12 +124,20 @@ source "$HOME/.cargo/env"
 
 ```bash
 
-cargo install --locked --git https://github.com/venom-blockchain/stvenom-node-tools
+cargo install --locked --git https://github.com/broxus/nodekeeper
 ```
 
 ```bash
-# Enable validator services
-sudo $PWD/.cargo/bin/stvenom init systemd
+# Optionally configure root directory:
+# export NODEKEEPER_ROOT=/var/nodekeeper
+#
+# Or explicitly specify it as a param, e.g.:
+# nodekeeper --root /var/nodekeeper init
+
+# Configure node
+nodekeeper init
+
+sudo $(which nodekeeper) init systemd
 ```
 
 Here choose the user for the validator. DON'T RUN Validator service as a root user!
@@ -145,14 +153,14 @@ Here choose the user for the validator. DON'T RUN Validator service as a root us
 Compile and init node
 
 ```bash
-stvenom init
+nodekeeper init
 ```
 
 Choose "other" network
 
 ```bash
 [0/2] Preparing configs
-✔ Create root directory? (/home/validator/.stvenom) · yes
+✔ Create root directory? (/home/validator/.nodekeeper) · yes
 ? Select network ›
   Everscale mainnet
   Everscale testnet
@@ -168,7 +176,7 @@ Provide global config URL (Contact Everscale core team)
 
 ```bash
 [0/2] Preparing configs
-✔ Create root directory? (/home/validator/.stvenom) · yes
+✔ Create root directory? (/home/validator/.nodekeeper) · yes
 ✔ Select network · other
 ✔ Config URL ·<hidden>
 ✔ Node config doesn't have control server entry. Create? · yes
@@ -176,7 +184,7 @@ Provide global config URL (Contact Everscale core team)
 ✔ Specify control port · 31000
 ✔ Enter public ip · 164.92.106.127
 ✔ Specify server ADNL port · 30000
-✔ Specify node DB path · /var/venom/rnode
+✔ Specify node DB path · /var/ever/rnode
 [1/2] Preparing binary
 ```
 
@@ -215,18 +223,18 @@ Required validator wallet balance: 20010 EVER
   • 2 x 20010 EVER, stakes for each round
 
 Make sure you back up your keys:
-/home/validator/.stvenom/keys/vld.keys.json
+/home/validator/.nodekeeper/keys/vld.keys.json
 ```
 
 :::info
 Make sure you back up your keys after the initial configuration!
-All keys are stored at $HOME/.stvenom/keys/
+All keys are stored at $HOME/.nodekeeper/keys/
 :::
 
 Init validator services
 
 ```bash
-sudo ~/.cargo/bin/stvenom init systemd
+sudo ~/.cargo/bin/nodekeeper init systemd
 ```
 
 :::caution
@@ -242,15 +250,15 @@ Service MUST NOT run as the root user
 
 It will create two services:
 
-- venom-validator-manager - control service that takes part in elections,
+- validator-manager - control service that takes part in elections,
 recovers stake and performs other tasks with the Elector contract
-- venom-validator - node itself, managing validation process
+- validator - node itself, managing validation process
 
 You can check the status of both services with the following commands:
 
 ```bash
-service venom-validator status
-service venom-validator-manager status
+service validator status
+service validator-manager status
 ```
 
 7. Transfer tokens to the Validator contract
@@ -260,10 +268,10 @@ step. The Wallet will become active after the first stake
 
 8. Wait until the elections start
 
-When elections start, the venom-validator-manager process will automatically stake the desired amount of tokens. You can check the current state of elections using [Venomscan.com](https://venomscan.com/validators).
+When elections start, the validator-manager process will automatically stake the desired amount of tokens. You can check the current state of elections using [Everscan](https://everscan.io/validators).
 
 :::info
-venom-validator-manager adds 1 EVER token for the stake to pay for the transaction fees, and you will be required to add 1 EVER token to the "stake and bonuses recovery" transaction. Due to this, it is adviseable to always keep some additional tokens in the Validator
+validator-manager adds 1 EVER token for the stake to pay for the transaction fees, and you will be required to add 1 EVER token to the "stake and bonuses recovery" transaction. Due to this, it is adviseable to always keep some additional tokens in the Validator
 :::
 
 If everything has been setup correctly - you should see your address in the validators list for the next round.
