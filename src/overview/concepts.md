@@ -34,7 +34,7 @@ External outbound messages are the events the contracts produce for the outside 
 
 For example, simple value transfer can be initiated with an external inbound message (by a human or some service) or with internal message from another contract. This message will produce a transaction (read below) and an internal message with value transfer.
 
-For detailed information about Messages please consult [this page](../arch/50-message.md)
+For detailed information about Messages please consult [this page](../arch/message.md)
 
 ### **Nodes**
 
@@ -68,4 +68,4 @@ A transaction is the result of a contract execution. In general, a transaction i
 
 Takes results of TVM, calculates fees, checks balance and other things. Used by validators to validate blocks. Can also be used on the client side to debug contract execution.
 
-For detailed information about Transaction executor please conult [this page](../arch/60-executor.md)
+For detailed information about Transaction executor please conult [this page](../arch/tvm-executor.md)

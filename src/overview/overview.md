@@ -40,19 +40,14 @@ Deploy smart contracts on the Everscale network and find out all common backend 
 Learn Everscale’s validation in case you want to be a validator or just familiarize yourself with the technology. 
 
 - [**Validator and Full Node Infrastructure**](../validate)
-  - [Staking Mechanics](../validate/staking-mechanics.md)
-  - [Node Requirements](../validate/node-requirements.md)
   - [Run Validator](../validate/run-validator.md)
-  - [Run Full Node](../validate/run-full-node.md)
-  - [Network Monitoring](../validate/network-monitoring.md) 
 
 ## Specifications 
 
 Learn about incoming external messages tracing via the REMP protocol. Also, study Everscale's token standards, DePools and others.
 
 - [**Specitifaction**](../spec/)
-  - [Intro](../spec/intro.md)
-  - [Token Standards](../spec/standards/)
+  - [Standards](../spec/standards/)
   - [ABI](../spec/abi/)
   - [DePools](../spec/depool-specifications.md)
   - [Executor](../spec/executor.md)
@@ -64,8 +59,8 @@ Learn about incoming external messages tracing via the REMP protocol. Also, stud
 Learn Everscale's peer-to-peer protocols. Among others, they are used to propagate new blocks as well as send and collect transaction candidates. 
 
 - [**Architecture**](../arch/)
-  - [Networking](../arch/networking.md)
-  - [Consensus](../arch/consensus-algorithm/)
+  - [Networking](../arch/networking)
+  - [Consensus](../arch/consensus/)
   - [TL-B and BoC](../arch/tlb-and-boc.md)
   - [Account](../arch/accounts.md)
   - [Message](../arch/message.md)

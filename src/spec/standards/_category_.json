@@ -1,9 +1,9 @@
 {
   "position": 1000,
-  "label": "Token Standards",
+  "label": "Standards",
   "link": {
-    "slug": "standards",
-    "title": "Token Standards",
+    "title": "Standards",
+    "slug": "/spec/standards",
     "type": "generated-index"
   }
 }

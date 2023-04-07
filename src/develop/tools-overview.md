@@ -14,12 +14,12 @@ Before you start developing or integrating anything into Everscale, we would lik
 
 ### Tools for developers
 
-- [Locklift](locklift.md) - development environment, analogous to Hardhat.
+- [Locklift](https://github.com/broxus/locklift) - development environment, analogous to Hardhat.
 - [Bytie](https://ever.bytie.moe) - smart contracts interaction playground.
 - [Everdev](https://github.com/tonlabs/everdev) - CLI tool and Javascript package that helps set up all the core developer tools and work with Everscale blockchain from a single interface
 - [RPC endpoints](https://docs.evercloud.dev/) - get started with RPC endpoints using this doc
 - [T-Sol compiler](https://github.com/tonlabs/TON-Solidity-Compiler) - Solidity-like language for smart contract development. Can be installed within Locklift or Everdev environments as well
-- [TONOS CLI](tonos-cli.md) - is a multi-platform command line interface for Everscale. It allows you to work with keys and seed phrases, deploy contracts, call any of their methods, generate and broadcast messages and more
+- [TONOS CLI](https://github.com/tonlabs/tonos-cli) - is a multi-platform command line interface for Everscale. It allows you to work with keys and seed phrases, deploy contracts, call any of their methods, generate and broadcast messages and more
 
 ### T-Sol IDE integrations
 

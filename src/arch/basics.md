@@ -21,7 +21,7 @@ An account can have some balance, a place for its code, a place for its data and
 It can have 1 owner, many owners and no owners at all.  
 Account ID is calculated during deploy from its initial code and data.
 
-In order to learn what Accounts are in detail, please follow [this page](40-accounts.md).
+In order to learn what Accounts are in detail, please follow [this page](accounts.md).
 
 ### About deploy
 
@@ -51,7 +51,7 @@ There are several types of fees for operations with contracts.
 
 For example, commission for storage, execution, and message delivery.
 
-Please follow [this page](20-fee-calculation.md) for Fee calculation details. 
+Please follow [this page](network-fees.md) for Fee calculation details. 
 
 ### About get methods
 
@@ -75,7 +75,7 @@ External outbound messages are the events the contracts produce for the outside 
 
 For example, a simple value transfer can be initiated with an external inbound message (by developers or a service) or with an internal message from another contract. This message will produce a transaction (read below) and an internal message with value transfer.
 
-In order to learn what Messages are in detail, please follow [this page](50-message.md).
+In order to learn what Messages are in detail, please follow [this page](message.md).
 
 ## Transaction
 
@@ -103,6 +103,6 @@ In order to learn what TVM is in detail, please follow [this link](tvm.md).
 
 It takes the results of TVM, calculates fees, checks balances and other things. Used by validators to validate blocks. Can also be used on the client side to debug contract execution.
 
-In order to learn what Transaction Executor is in detail, please follow [this link](60-executor.md).
+In order to learn what Transaction Executor is in detail, please follow [this link](tvm-executor.md).
 
-In order to understand how Everscale blockchain works please follow [this page](../develop/smart-contracts/45-blockchain.md).
+In order to understand how Everscale blockchain works please follow [this page](../develop/intro.md).
